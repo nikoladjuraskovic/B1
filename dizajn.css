@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(180, 217, 235);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: left;
+  color: rgb(43, 84, 128);
+}
+
+/* div kontejner*/
+#kontejner {
+  /*nakon postavljanja font-family da je sans-serif u body, poslednja slika ispada iz kontejner-a.
+  Zato smo sirinu kontejnera postavili na 641px umesto 640px da bi slika stala u kontejner.
+  Ako neko uradi i resi problem na drugaciji nacin(da kontejner bude 640px) nek mi javi */
+  width: 641px;
+  height: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/*centralna slika*/
+#centralna {
+  width: 640px;
+  height: 480px;
+
+}
+
+/*male slike*/
+img {
+  width: 64px;
+  height: 40px;
+  margin-top: 2px;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+/*textarea za prikaz opisa slika*/
+#opis {
+  width: 640px;
+  height: 115px;
+  background-color: rgb(43, 84, 128);
+  color: white;
+  resize: none;
+  font-size: 15px;
+
+}
+
+/*navigacioni meni*/
+.zavrsni {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(43, 84, 128);
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.active {
+  background-color: rgb(130, 183, 208);
+  color: black;
+}

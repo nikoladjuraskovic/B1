@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(180, 217, 235);
+}
+
+h1{
+    color: rgb(43, 84, 128);
+    margin: 20px;
+}
+
+nav{
+    background-color: rgb(43, 84, 128);
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    color: white;
+    padding: 15px 25px;
+    border-right: 1px solid white;
+}
+
+li#poslednji{
+    border-right: none;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.trenutna{
+    background-color: rgb(130, 183, 208);
+    color: black;
+}
+
+.trenutna > a{
+    color: black;
+}
+
+.container {
+    background-color: white;
+    width: 640px;
+    height: 640px;
+    margin: 50px auto;   
+}
+
+textarea{
+    width: 640px;
+    background-color: rgb(43, 84, 128);
+    color: white;
+}
+
+#centralna-fotografija {
+    width: 640px;
+    height: 480px;
+}
+
+img{
+    width: 64px;
+    height: 40px; 
+}

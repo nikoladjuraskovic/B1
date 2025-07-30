@@ -1,34 +1,69 @@
-<html>
-    <head>
-        <title>Galerija slika</title>  
-        <meta charset="UTF-8">      
-        <link rel="stylesheet" type="text/css" href="dizajn.css"/>
-        
-    </head>
-    <body>
-        <header>
-            <h1>Фото галерија</h1>
-            <ul>
-                <li><a class="active" href="#">Почетна</a></li>
-                <li><a href="autor.html">О аутору</a></li>
-                <li><a href="uputstvo.html">Упутство</a></li>
-                <li class="zavrsni"><a href="">Завршни испит</a></li>
-              </ul>
-        </header> 
-        <div id="kontejner">
-            <textarea id="opis">Седам светских чуда античког света: Најстарије помињање листе светских чуда потиче од историчара Херодота (око 450. г. п. н. е.). Први пут свих седам чуда су заједно поменута у епиграму феничанског писца Антипатроса из Сидона (2. век п. н. е.), који је описао путопис по источном Медитерану свога времена. Грци су овај списак назвали „Седам атракција насељене Земље које треба обавезно видети“. Седам чуда је вероватно одабрано зато што је овај број за старе Грке имао симболику магичног броја. Опис седам светских чуда се налази у трактату из 6. века нове ере „О седам светских чуда“. Седам светских чуда старог света је скуп архитектонских дела које су стари Грци, нарочито у хеленистичкој епохи, сматрали врхунцем људске креативности и генијалности. Међутим, од ових седам чуда још само комплекс великих пирамида у Гизи и дан данас постоји.</textarea><br/>
-            <img id="centralna" src="slike/slika1.jpg"/><br/>
-            <img src="slike/slika1.jpg" onclick="prikazi(1)" />
-            <img src="slike/slika2.jpg" onclick="prikazi(2)" />
-            <img src="slike/slika3.jpg" onclick="prikazi(3)" />
-            <img src="slike/slika4.jpg" onclick="prikazi(4)"/>
-            <img src="slike/slika5.jpg" onclick="prikazi(5)"/>
-            <img src="slike/slika6.jpg" onclick="prikazi(6)"/>
-            <img src="slike/slika7.jpg" onclick="prikazi(7)"/>
-            <img src="slike/slika8.jpg" onclick="prikazi(8)" />
-            <img src="slike/slika9.jpg" onclick="prikazi(9)"/>
-            <img src="slike/slika10.jpg" onclick="prikazi(10)"/>
-        </div>
-        <script src="galerija.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Фото галерија</h1>
+      <nav>
+        <ul>
+          <li class="trenutna"><a href="pocetna.html">Почетна</a></li>
+          <li><a href="autor.html">О аутору</a></li>
+          <li><a href="uputstvo.html">Упутство</a></li>
+        </ul>
+        <ul>
+          <li id="poslednji">Завршни испит</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <textarea name="opis" id="opis" rows="8">
+Седам светских чуда античког света: Најстарије помињање листе светских чуда потиче од историчара 
+Херодота (око 450. г. п. н. е.). Први пут свих седам чуда су заједно поменута у епиграму феничанског писца Антипатроса
+из Сидона (2. век п. н. е.), који је описао путопис по источном Медитерану свога времена.
+Грци су овај списак назвали „Седам атракција насељене Земље које треба обавезно видети“.
+Седам чуда је вероватно одабрано зато што је овај број за старе Грке имао симболику магичног броја.
+Опис седам светских чуда се налази у трактату из 6. века нове ере „О седам светских чуда“.
+Седам светских чуда старог света је скуп архитектонских дела које су стари Грци,
+нарочито у хеленистичкој епохи, сматрали врхунцем људске креативности и генијалности.
+Међутим, од ових седам чуда још само комплекс великих пирамида у Гизи и дан данас постоји.
+            </textarea
+        >
+
+        <img
+          id="centralna-fotografija"
+          src="slike/slika1.jpg"
+          alt="Slika centralna"
+        />
+        <!--img takovi idu svi u jedan red bez prostora izmedju da bi sve slike na stranici stale u jedan red-->
+        <img src="slike/slika1.jpg" alt="Slika 1" class="slike" /><img
+          src="slike/slika2.jpg"
+          alt="Slika 2"
+          class="slike"
+        /><img src="slike/slika3.jpg" alt="Slika 3" class="slike" /><img
+          src="slike/slika4.jpg"
+          alt="Slika 4"
+          class="slike"
+        /><img src="slike/slika5.jpg" alt="Slika 5" class="slike" /><img
+          src="slike/slika6.jpg"
+          alt="Slika 6"
+          class="slike"
+        /><img src="slike/slika7.jpg" alt="Slika 7" class="slike" /><img
+          src="slike/slika8.jpg"
+          alt="Slika 8"
+          class="slike"
+        /><img src="slike/slika9.jpg" alt="Slika 9" class="slike" /><img
+          src="slike/slika10.jpg"
+          alt="Slika 10"
+          class="slike"
+        />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

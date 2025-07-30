@@ -1,27 +1,31 @@
-<html>
-    <head>
-        <title>Galerija slika</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="dizajn.css"/>
-        
-    </head>
-    <body>
-        <header>
-            <h1>Фото галерија</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Фото галерија</h1>
+        <nav>
             <ul>
                 <li><a href="pocetna.html">Почетна</a></li>
                 <li><a href="autor.html">О аутору</a></li>
-                <li><a class="active" href="#">Упутство</a></li>
-                <li class="zavrsni"><a href="">Завршни испит</a></li>
-              </ul>
-        </header>
-        <h2>Корисничко упутство</h2>
-        <p>Департман за историју филозофског факултета направио је веб апликацију за опис седам светских чуда старог века. 
-            Веб страница има 3 линка. Кликом на дугме корисник се води на одговарајућу страницу. Почетна страница приказује информације
-            изабраног светског чуда. Кликом на једну од слика у низу, иста се увећава и кориснику исписују информације о изабраном
-            светском чуду. Кликом на страницу о аутору исписују се основни подаци о аутору. Кликом на упутство корисник се упућује на
-            ово упутство.
-        </p>
-        
-    </body>
+                <li class="trenutna"><a href="uputstvo.html">Упутство</a></li>            
+            </ul>
+            <ul>
+                <li id="poslednji">Завршни испит</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Uputstvo: Veb aplikacija sluzi za prikazivanje 7 svetskih cuda antickog sveta.
+        Aplikacija ima 3 veb stranice. Na stranici pocetna se prikazuju svetska cuda kao slike.
+        Kada se klikne jedna od malih slika, ona se prikazuje uvecana na sredini veb stranice sa
+        opisom te slike iznad.
+    </main>
+    
+</body>
 </html>
